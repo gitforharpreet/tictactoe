@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tic Tac Toe - Game</title>
+    <link rel="stylesheet" href="styles.css"/>
+    <script src="main.js"></script>
+</head>
+<body>
+
+<h1>Tic Tac Toe</h1>
+<h2 id="result" hidden>WINNER!!</h2>
+
+<div > 
+    <table align="center">
+        <tr >
+            <td onclick="toggle(2, 0);">
+                <img src="images/blank.png" id="20">
+                <img src="images/tick.png" style="display:none;" id="20_tick">
+                <img src="images/close.png" style="display:none;" id="20_close">
+            </td>
+            <td onclick="toggle(2, 1);">
+                <img src="images/blank.png" id="21">
+                <img src="images/tick.png" style="display:none;" id="21_tick">
+                <img src="images/close.png" style="display:none;" id="21_close">
+            </td>
+            <td onclick="toggle(2, 2);">
+                <img src="images/blank.png" id="22">
+                <img src="images/tick.png" style="display:none;" id="22_tick">
+                <img src="images/close.png" style="display:none;" id="22_close">
+            </td>
+        </tr>
+        <tr>
+            <td onclick="toggle(1, 0);">
+                <img src="images/blank.png" id="10">
+                <img src="images/tick.png" style="display:none;" id="10_tick">
+                <img src="images/close.png" style="display:none;" id="10_close">
+            </td>
+            <td onclick="toggle(1, 1);">
+                <img src="images/blank.png" id="11" >
+                <img src="images/tick.png" style="display:none;" id="11_tick">
+                <img src="images/close.png" style="display:none;" id="11_close">
+            </td>
+            <td onclick="toggle(1, 2);">
+                <img src="images/blank.png" id="12" >
+                <img src="images/tick.png" style="display:none;" id="12_tick" >
+                <img src="images/close.png" style="display:none;" id="12_close" >
+            </td>
+        </tr>
+        <tr>
+            <td onclick="toggle(0, 0);">
+                <img src="images/blank.png" id="00" >
+                <img src="images/tick.png" style="display:none;" id="00_tick" >
+                <img src="images/close.png" style="display:none;" id="00_close" >
+            </td>
+            <td onclick="toggle(0, 1);">
+                <img src="images/blank.png" id="01" >
+                <img src="images/tick.png" style="display:none;" id="01_tick" >
+                <img src="images/close.png" style="display:none;" id="01_close" >
+            </td>
+            <td onclick="toggle(0, 2);">
+                <img src="images/blank.png" id="02" >
+                <img src="images/tick.png" style="display:none;" id="02_tick" >
+                <img src="images/close.png" style="display:none;" id="02_close" >
+            </td>
+        </tr>
+    </table>
+
+</div>
+
+<br>
+<div align="center">
+    <input class="button" type="button" value = "Refresh" onclick="refresh();">
+</div>
+
+</body>
+</html>
